@@ -363,7 +363,7 @@
 	    (format t "F  : ~S~%" (getRegistre vm 'R0) )
 )
 
-(defun vm_lecture (vm nomfichier &optional (co 100001))
+(defun vm_read (vm nomfichier &optional (co 100001))
 	(let ((fichier (open nomfichier)))
 		(if fichier
 			(prog1
@@ -372,7 +372,6 @@
 			)
 		)
 	)
-	"Chargement termine !"
 )
 
 ; On regarde chaque instruction, on effectue modification si nécessaire

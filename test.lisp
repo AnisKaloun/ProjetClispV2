@@ -14,9 +14,9 @@
 (compilation "fact.lisp" "fact.asm")
 
 
-(make-vm 'vmtest 200000)
+(make-vm 'vmtest 300000)
 
-(vm_lecture 'vmtest "fact.asm")
+(vm_read 'vmtest "fact.asm")
 
 (format t "~%Resultat de la fonction fact :~%")
 
@@ -29,10 +29,10 @@
 
 (compilation "fibo.lisp" "fibo.asm")
 
-(make-vm 'vm 200000)
+(make-vm 'vm 300000)
 
 (format t "~%Resultat de la fonction fibo :~%")
 
-(vm_lecture 'vm "fibo.asm")
+(vm_read 'vm "fibo.asm")
 
 (vm_exec 'vm)
